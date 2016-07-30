@@ -49,6 +49,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Infrastructure\DbFactory.cs" />
+    <Compile Include="Infrastructure\Disposable.cs" />
+    <Compile Include="Infrastructure\IDbFactory.cs" />
+    <Compile Include="Infrastructure\IRepository.cs" />
+    <Compile Include="Infrastructure\IUnitOfWork.cs" />
+    <Compile Include="Infrastructure\RepositoryBase.cs" />
+    <Compile Include="Infrastructure\UnitOfWork.cs" />
+    <Compile Include="PipiShopDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -56,10 +64,17 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Pipishop.Common\Pipishop.Common.csproj">
+    <ProjectReference Include="..\Pipishop.Common\PipiShop.Common.csproj">
       <Project>{ada2f478-6d92-42ee-b70b-5e84a3454758}</Project>
-      <Name>Pipishop.Common</Name>
+      <Name>PipiShop.Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\PipiShop.Model\PipiShop.Model.csproj">
+      <Project>{2d6fd7c5-8128-4dd7-81bf-9b14b6bfbf5a}</Project>
+      <Name>PipiShop.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Repositories\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
