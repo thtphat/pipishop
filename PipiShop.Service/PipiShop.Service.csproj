@@ -43,9 +43,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Pipishop.Common\Pipishop.Common.csproj">
+    <ProjectReference Include="..\Pipishop.Common\PipiShop.Common.csproj">
       <Project>{ada2f478-6d92-42ee-b70b-5e84a3454758}</Project>
-      <Name>Pipishop.Common</Name>
+      <Name>PipiShop.Common</Name>
     </ProjectReference>
     <ProjectReference Include="..\PipiShop.Data\PipiShop.Data.csproj">
       <Project>{f7af3a62-41b4-4151-af36-48ac8c4e9e28}</Project>
