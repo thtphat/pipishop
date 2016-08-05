@@ -3,7 +3,7 @@ using PipiShop.Model.Models;
 
 namespace PipiShop.Data.Repositories
 {
-    public interface ISlideRepository
+    public interface ISlideRepository : IRepository<Slide>
     {
     }
 

@@ -3,7 +3,7 @@ using PipiShop.Model.Models;
 
 namespace PipiShop.Data.Repositories
 {
-    public interface ISupportOnlineRepository
+    public interface ISupportOnlineRepository : IRepository<SupportOnline>
     {
     }
 

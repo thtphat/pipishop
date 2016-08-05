@@ -3,7 +3,7 @@ using PipiShop.Model.Models;
 
 namespace PipiShop.Data.Repositories
 {
-    public interface IOrderDetailRepository
+    public interface IOrderDetailRepository : IRepository<OrderDetail>
     {
     }
 

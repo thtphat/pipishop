@@ -3,7 +3,7 @@ using PipiShop.Model.Models;
 
 namespace PipiShop.Data.Repositories
 {
-    public interface ITagRepository
+    public interface ITagRepository : IRepository<Tag>
     {
     }
 

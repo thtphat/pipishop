@@ -3,7 +3,7 @@ using PipiShop.Model.Models;
 
 namespace PipiShop.Data.Repositories
 {
-    public interface IMenuGroupRepository
+    public interface IMenuGroupRepository : IRepository<MenuGroup>
     {
     }
 

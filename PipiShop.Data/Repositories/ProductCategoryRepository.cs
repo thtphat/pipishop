@@ -3,7 +3,7 @@ using PipiShop.Model.Models;
 
 namespace PipiShop.Data.Repositories
 {
-    public interface IProductCategoryRepository
+    public interface IProductCategoryRepository : IRepository<ProductCategory>
     {
     }
 
