@@ -7,11 +7,11 @@ namespace PipiShop.Service
 {
     public interface IPostCategoryService
     {
-        void Add(PostCategory postCagetory);
+        PostCategory Add(PostCategory postCagetory);
 
         void Update(PostCategory postCategory);
 
-        void Delete(int id);
+        PostCategory Delete(int id);
 
         IEnumerable<PostCategory> GetAll();
 
@@ -31,14 +31,14 @@ namespace PipiShop.Service
             this._unitOfWork = unitOfWork;
         }
 
-        public void Add(PostCategory postCagetory)
+        public PostCategory Add(PostCategory postCagetory)
         {
-            _postCategoryRepository.Add(postCagetory);
+            return _postCategoryRepository.Add(postCagetory);
         }
 
-        public void Delete(int id)
+        public PostCategory Delete(int id)
         {
-            _postCategoryRepository.Delete(id);
+            return _postCategoryRepository.Delete(id);
         }
 
         public IEnumerable<PostCategory> GetAll()
